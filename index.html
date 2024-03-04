@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website-Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/49ce68c463.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/NewLogo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Personal Portfolio</p>
+             
+                <h1>Hi,I'm <span>Sejal </span><br> Sonawane from India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/imag2.jpeg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there! I'm Sejal Sonawane, a passionate computer engineering student with a keen interest in developing 
+                        innovative solutions for real-world challenges. Within these digital pages, you'll find a showcase of my 
+                        expertise, creativity, and dedication to Data Structure & Algorithm, and Web Development. I have experience 
+                        in programming languages such as Java and Python.
+                        <br>
+                        Beyond my technical abilities, I possess strong communication and interpersonal skills, working seamlessly 
+                        to bridge the gap between ideas and execution.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>Programming Languages</span><br>C,Java,Python,HTML,CSS</li>
+                        <li><span>Innovative Thinking</span><br>Participated in Business Innovation Competition, Smart India Hackathon .</li>
+                        <li><span>GFG</span><br>Top 600</li>
+                    </ul>
+                </div>
+    
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-Current</span><br>Second-Year Engineering Student<br> MKSSS's Cummins College of Engineering for Women, Pune.<br>CGPA - 8.6</li>
+                        <li><span>2022</span><br>12th (HSC Board)<br>HPT Arts & RYK Science College , Nashik.<br>86.83%</li>
+                        <li><span>2022</span><br>10th (SSC Board)<br>Adarsh Madhyamik Vidyalaya , Nashik.<br>96.20%</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Bharat Intern-Current</span><br>Web Developer</li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------service----------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        With a keen eye for aesthetics and attention to detail, I specialize in crafting visually stunning interfaces
+                        that not only look beautiful but also enhance usability and brand identity. From typography to color theory, 
+                        I meticulously design every element to create cohesive and memorable experiences.
+                    </p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        With hands-on experience in crafting two projects , including a portfolio and a weather application, I bring a practical
+                        understanding of frontend technologies to every project.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/park1.jpg">
+                    <div class="layer">
+                        <div>
+                            <h3>Vehicle Parking Management System</h3>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/PuneMtero.jpg">
+                <div class="layer">
+                    <div>
+                    <h3>Pune Metro Map Navigator</h3>
+                    
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/weatherAPI.jpg">
+                <div class="layer">
+                    <div>
+                    <h3>Weather API</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Certifications</a>
+    </div>
+</div>
+<!------------------Contact----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> sejalsonawane27@gmail.com</p><br>
+                <p><i class="fa-solid fa-phone"></i> +91 8830628406</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_say_jalll_/?next=%2F&hl=en" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sejal-sonawane-bab3b9265/" ><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <br>
+                <a href="Images/Sejal-CV.pdf" download target="_main" class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Sejal.Made with Love <i class="fas fa-heart"></i> </p>
+    </div>
+</div>
+    <script>
+
+       var tablinks=document.getElementsByClassName("tab-links");
+       var tabcontents=document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+    </script>
+    <script>
+        var menu=document.getElementById("sidemenu");
+        function openmenu(){
+            menu.style.right="0";
+        }
+        function closemenu(){
+            menu.style.right="-200px";
+        }
+    </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbytTu6njnzRSg6OPAAQr9rPERMZAvvKKIivZrVRHZ2ABij-V4FsL2JrKf7KUIJhmAsRrQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message send successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script></body>
+</html>
